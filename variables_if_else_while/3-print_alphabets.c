@@ -9,25 +9,26 @@
  */
 int main(void)
 {
-	char alphabet[] = {
-		'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-		'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-		'u', 'v', 'w', 'x', 'y', 'z'
-	};
-	char upper[]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+    char alphabet[] = {
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+        'u', 'v', 'w', 'x', 'y', 'z'
+    };
+    char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int i;
 
-	for (i = 0; i < 26; i++)
-	{
-		putchar(alphabet[i]);
-	}
-	int j;
-	for (j = 0;j < 26;j++)
-	{	
-		putchar(upper[j])
-	}
-	putchar('\n');
+    for (i = 0; i < 26; i++)
+    {
+        putchar(alphabet[i]);
+    }
 
-	return (0);
+    for (int j = 0; j < 26; j++) int j;
+    {
+        putchar(upper[j]);
+    }
+    putchar('\n');
+
+    return (0);
 }
+
 
