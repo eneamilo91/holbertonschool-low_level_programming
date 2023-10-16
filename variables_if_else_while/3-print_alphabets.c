@@ -21,8 +21,8 @@ int main(void)
     {
         putchar(alphabet[i]);
     }
-
-    for (int j = 0; j < 26; j++) int j;
+    int j;
+    for (int j = 0; j < 26; j++) 
     {
         putchar(upper[j]);
     }
