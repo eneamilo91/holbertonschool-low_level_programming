@@ -12,7 +12,7 @@ int main(void)
 	char revalpha[] = "zyxwvutsrqponmlkjihgfedcba";   
 	int x;
 
-	for (x = 0 ; x < 26 ; x++)
+	for (x = 0; x < 26; x++)
 {
 		putchar(revalpha[x]);
 		
