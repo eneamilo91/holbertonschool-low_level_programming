@@ -5,8 +5,7 @@
 /**
  * main - Entry point of the program.
  *
- * This function is the entry point for the program. It generates a random number,
- * calculates the last digit of that number, and then prints the result.
+ * This function is the entry point for the program.
  *
  * Return: Always 0 (Success).
  */
