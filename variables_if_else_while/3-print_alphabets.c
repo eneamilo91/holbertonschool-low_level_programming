@@ -16,12 +16,13 @@ int main(void)
     };
     char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     int i;
+    int j;
 
     for (i = 0; i < 26; i++)
     {
         putchar(alphabet[i]);
     }
-    int j;
+    
     for (int j = 0; j < 26; j++) 
     {
         putchar(upper[j]);
