@@ -23,7 +23,7 @@ int main(void)
         putchar(alphabet[i]);
     }
     
-    for (int j = 0; j < 26; j++) 
+    for (j = 0; j < 26; j++) 
     {
         putchar(upper[j]);
     }
