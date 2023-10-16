@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point of the program.
  *
  * This function is the entry point for the program.
  *
@@ -9,12 +9,16 @@
  */
 int main(void)
 {
-	int x = 0;
-	while (x <= 9)
-	{
+	    int x = 0;
+
+	    while (x <= 9)
+{
 		printf("%d",x);
 		x++;
-	}
+}
+
 	printf("\n");
+
 	return (0);
-}.
+}
+
