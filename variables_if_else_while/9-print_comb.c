@@ -16,9 +16,17 @@ int main(void)
 {
 		putchar(i + '0');
 		putchar(',');
-		putchar(' i')
+		putchar(' ');
 }
-	putchar('9')
+		
+		
+	putchar('9');
+
+
+
+
+	
+
 	return (0);
 }
 
