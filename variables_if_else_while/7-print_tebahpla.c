@@ -16,7 +16,6 @@ int main(void)
 {
 	putchar(revalpha[x]);
 }
-
 	putchar('\n');
 
 	return (0);
