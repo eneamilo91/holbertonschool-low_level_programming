@@ -15,7 +15,6 @@ int main(void)
 	for (x = 0; x < 26; x++)
 {
 	putchar(revalpha[x]);
-		
 }
 
 	putchar('\n');
