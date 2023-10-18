@@ -2,7 +2,8 @@
 
 /**
  *int_ add - entry point
- *write function
+ *adds two numbers together
+ * int x and int y
  * Return x + y
  */
 
