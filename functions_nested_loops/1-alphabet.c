@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
- * main - Entry point
- *print alphabet
+ * print alphabet - Entry point
+ *
  * Return: Always 0 (Success)
  */
 
