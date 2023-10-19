@@ -3,9 +3,9 @@
 #include "main.h"
 /**
  * add - Entry point
- * parameter x,parameter y
+ * parameter int x,parameter int y
  * add x + y
- * Return result
+ * return (x + y)
  */
 
 	int add(int x, int y)
