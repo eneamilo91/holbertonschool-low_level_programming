@@ -1,73 +1,31 @@
 #include "main.h"
-
 /**
- * print_last_digit - prints the last digit of a number
- * @n: the int to extract the last digit from
- * Return: value of the last digit
+ * jack_bauer - Entry point
+ * Print clock from 0:0 to 23:59;
+ * Return: 0
  */
-
-	void jack_bauer(void)
+void jack_bauer(void)
 {
-	int i;
-	int j;
-	int x;
-	int y;
+	int i, j, k, l;
 
-	for (i = 0; i <= 2; i++)
+	for (i = 0; i < 3; i++)
 	{
-		for (j = 0;j <= 9;j++)
+		for (j = 0; j < 10; j++)
 		{
-			for (x = 0;x <= 5;x++)
+			if (i == 2 && j == 4)
+				break;
+			for (k = 0; k < 6; k++)
 			{
-				for (y = 0;y <= 9;y++)
+				for (l = 0; l < 10; l++)
 				{
-					if (i == 2 && j == 3 && x == 5 && y == 9)
-					{
-						continue;
-					}
 					_putchar(i + '0');
 					_putchar(j + '0');
 					_putchar(':');
-					_putchar(x + '0');
-					_putchar(y + '0');
+					_putchar(k + '0');
+					_putchar(l + '0');
 					_putchar('\n');
-				
 				}
-
-
 			}
-
-
 		}
-
-
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
