@@ -23,7 +23,7 @@
 				{
 					if (i == 2 && j == 3 && x == 5 && y == 9)
 					{
-						break;
+						continue;
 					}
 					_putchar(i + '0');
 					_putchar(j + '0');

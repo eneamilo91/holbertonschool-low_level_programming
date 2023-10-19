@@ -3,12 +3,12 @@
 #include "main.h"
 /**
  * add - Entry point
- * @first_x:int
- * @second_y: int
- * Return the sum of two int numbers
+ * parameter x,parameter y
+ * add x + y
+ * Return result
  */
 
 	int add(int x, int y)
-{
-	return (x + y);
+{	
+	return (x + Y);
 }
