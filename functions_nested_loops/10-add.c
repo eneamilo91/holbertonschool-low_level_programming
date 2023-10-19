@@ -1,11 +1,11 @@
 #include"main.h"
 
-#include "main.h"
 /**
  * add - Entry point
- * @int x, int y: is a parameter
- * Return abs(int x, int y);
- * Return (x + y)
+ * @x: -first int
+ * @y: second int
+ * Return the sum of two int numbers;
+ * Return: 0
  */
 
 	int add(int x, int y)
