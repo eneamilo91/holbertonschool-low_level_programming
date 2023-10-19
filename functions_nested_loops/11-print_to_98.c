@@ -1,37 +1,33 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _islower - checks for lowercase character
  * @c: the character to check
  * Return: 1 if c is lowercase, 0 otherwise
  */
 
-	void print_to_98(int n, int x)
+	void print_to_98(int n)
 {
-
-
-	for (n = x; (x <= 98 && x <= 0);x++)
+	if(n > 98)
 	{
-		if (x != 98)
+		while(n > 98)
 		{
-
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n);
+			n--;
 		}
-
-		_putchar(x + '0');
-		_putchar('\n');
-
-	}
-	for (n = x;x >=98;x--)
-	{
-		if (x != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		_putchar(x + '0');
-		_putchar('\n');
 	}
 
+	if(n < 98)
+	{
+		while (n < 98)
+		{
+			printf("%d, ", n);
+			n++;
+		}
+	}
+
+	printf("98\n");
 }
+
+
+	
