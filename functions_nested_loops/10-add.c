@@ -3,8 +3,8 @@
 #include "main.h"
 /**
  * add - Entry point
- * @first_n: -first number
- * @second_n: second num
+ * @first_x: -first number
+ * @second_y: second num
  * Return the sum of two int numbers;
  * Return: 0
  */
