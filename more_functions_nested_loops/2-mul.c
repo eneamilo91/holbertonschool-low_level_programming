@@ -5,7 +5,7 @@
  * @a: -holds value for input
  * @b: -hold value for input
  * Return: a*b
- * */
+ */
 int mul(int a, int b)
 {
 	return (a * b);
