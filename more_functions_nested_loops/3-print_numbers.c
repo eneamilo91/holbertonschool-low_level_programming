@@ -1,5 +1,9 @@
 #include"main.h"
 
+/**
+ * print_numbers -entry point.Prints digits
+ * @a: -holds value for input
+ */
 void print_numbers(void)
 {
 	int a = 0;
