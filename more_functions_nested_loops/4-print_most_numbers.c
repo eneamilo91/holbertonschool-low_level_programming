@@ -1,5 +1,8 @@
 #include"main.h"
 
+/**
+ * print_most_numbers -entry point,prints numbers
+ */
 void print_most_numbers(void)
 {
 	int a;
