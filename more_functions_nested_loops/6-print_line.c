@@ -1,5 +1,9 @@
 #include"main.h"
 
+/**
+ * print_line -entry point,draws a straight line
+ * @n: -hold value for input
+ */
 
 void print_line(int n)
 {
