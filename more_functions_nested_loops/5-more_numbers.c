@@ -1,5 +1,8 @@
 #include"main.h"
 
+/**
+ * more_numbers -entry point,prints 10 times the digits
+ */
 void more_numbers(void)
 {
 	int a;
