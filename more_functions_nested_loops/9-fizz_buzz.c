@@ -14,27 +14,27 @@
                 if (x % 3 == 0 && x % 5 == 0)
         {
                         printf("FizzBuzz");
-                        putchar(' ');
+                        printf(" ");
         }
 
                 else if (x % 5 == 0)
         {
                         printf("Buzz");
-                        putchar(' ');
+                       	printf(" ");
         }
 
                 else if (x % 3 == 0 )
         {
                         printf("Fizz");
-                        putchar(' ');
+                        printf(" ");
         }
 
                 else
         {
                         printf("%d", x);
-                        putchar(' ');
+                        printf(" ");
         }
 
     }
-   putchar('\n');
+   printf("\n");
 }
