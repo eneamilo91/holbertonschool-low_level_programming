@@ -29,11 +29,6 @@
 			printf("Fizz");
 			printf(" ");
 		}
-		else if (x == 100)
-		{
-			break;
-		}
-		
 		else
 		{
 			printf("%d", x);
