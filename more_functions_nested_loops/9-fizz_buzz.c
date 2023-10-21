@@ -24,7 +24,7 @@
 			printf(" ");
 		}
 
-		else if (x % 3 == 0 )
+		else if (x % 3 == 0)
 		{
 			printf("Fizz");
 			printf(" ");
