@@ -21,9 +21,6 @@ re: fclean all
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
 
-main.o: main.c
-	$(CC) -c $< -o $@
-
-school.o: school.c
+$(OBJ): %.o: %.c
 	$(CC) -c $< -o $@
 
