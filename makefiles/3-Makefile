@@ -3,17 +3,24 @@ SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm -f
+
+
+
 all: $(NAME)
+
 clean:
-	$(RM) 0-Makefile 1-Makefile 2-Makefile 3-Makefile school.c main.c main.c~ m.h $(NAME)
-oclean: 
-	$(RM) main.o school.o
-fclean: 
-	$(RM) 0-Makefile 1-Makefile 2-Makefile 3-Makefile school.c main.c main.c~ m.h $(NAME) main.o school.o
-re: main.c school.c
-	$(CC) $(SRC) -o school
+    $(RM) *~ $(NAME)
+
+oclean:
+    $(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
+
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
-		
-$(OBJ): %.o: %.c
+
+%.o: %.c
 	$(CC) -c $< -o $@
+
