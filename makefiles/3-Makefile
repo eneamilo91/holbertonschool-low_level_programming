@@ -1,18 +1,18 @@
 CC=gcc
-SRC=main.c school.c
+SRC=main.c m.h school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm -f
 
-
+.PHONY: all clean oclean fclean re
 
 all: $(NAME)
 
 clean:
-    $(RM) *~ $(NAME)
+	$(RM) $(NAME)
 
 oclean:
-    $(RM) $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
@@ -21,6 +21,13 @@ re: fclean all
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
 
-%.o: %.c
+main.o: main.c m.h
 	$(CC) -c $< -o $@
+
+school.o: school.c m.h
+	$(CC) -c $< -o $@
+
+m.h: ;
+
+.PHONY: clean oclean fclean re
 
