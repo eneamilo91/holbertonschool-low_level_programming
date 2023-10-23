@@ -11,9 +11,9 @@
 {	
 	int a[n];
 	
-	for (n = 0; array[n] != '\0'; n++)
+	for (n = 0; a[n] != '\0'; n++)
 	{
-		printf("%d", array[n]);
+		printf("%d", a[n]);
 		printf(",");
 		printf(" ");
 	
