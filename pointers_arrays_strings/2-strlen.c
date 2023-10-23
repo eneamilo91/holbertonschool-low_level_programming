@@ -4,5 +4,6 @@
 	int _strlen(char *s)
 {
 	int len;
-	*s = &len;
+	*s = &str;
+	len = *s
 }
