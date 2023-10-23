@@ -6,18 +6,18 @@
  * @n: -hold value for input
  */ 
 
+#include <stdio.h>
 
 	void print_array(int *a, int n)
-{	
-	int a[n];
-	
-	for (n = 0; a[n] != '\0'; n++)
+{
+	for (int i = 0; i < n; i++)
 	{
-		printf("%d", a[n]);
-		printf(",");
-		printf(" ");
-	
-	
+		printf("%d", a[i]);
+	if (i < n - 1)
+	{
+		printf(", ");
 	}
-
+	}
+	printf("\n");
 }
+
