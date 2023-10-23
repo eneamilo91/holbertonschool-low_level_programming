@@ -2,7 +2,8 @@
 
 /**
  * swap_int -entry point,swaps values
- * @a,b: -hold values for output
+ * @a: -hold values for output
+ * @b: -hold a velue for output
  */
 
 
