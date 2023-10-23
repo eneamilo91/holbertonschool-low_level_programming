@@ -1,7 +1,7 @@
 #include"main.h"
 
 
-	int _strlen(char *str)
+	void _puts(char *str)
 {
 	int i;
 
@@ -10,5 +10,5 @@
 		_putchar(str[i]);			
 	
 	}
-	return (i);
+
 }
