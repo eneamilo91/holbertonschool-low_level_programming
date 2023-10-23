@@ -3,8 +3,11 @@
 
 	int _strlen(char *s)
 {
-	char *str;
-	int len;
-	*s = &str;
-	len = *s
+	int i;
+
+	for (i = 0;*s;i++)
+	{
+		return (i);
+	
+	}
 }
