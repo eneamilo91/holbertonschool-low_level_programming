@@ -3,7 +3,7 @@
 /**
  * puts2 -entry point,prints every other char
  * @str: -holds value for input
- */ 
+ */
 
 
 	void puts2(char *str)
