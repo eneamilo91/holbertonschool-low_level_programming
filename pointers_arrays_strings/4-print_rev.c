@@ -9,7 +9,7 @@
 {
 	int len = 0;
 	int i, last_index;
-	
+
 	while (s[len] != '\0')
 	{
 		len++;
