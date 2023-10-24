@@ -3,7 +3,7 @@
 /**
  * puts_half -entry point,prints half s
  * @str: -holds value for input
- */ 
+ */
 
 
 void puts_half(char *str)
