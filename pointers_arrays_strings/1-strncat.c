@@ -23,6 +23,10 @@ char *_strncat(char *dest, char *src, int n)
     }
 
 	if (j >= n)
-		return ptr;
+	{
+		break;
+	}
+		
+	return ptr;
 }
 
