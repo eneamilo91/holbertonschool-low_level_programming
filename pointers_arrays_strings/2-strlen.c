@@ -1,4 +1,9 @@
 #include"main.h"
+/**
+ * int_strlen -entry point,returns length of string
+ * @s: -holds value for input
+ * Return:0
+ */
 
 
 	int _strlen(char *s)
@@ -7,7 +12,7 @@
 
 	for (i = 0 ; s[i]!= '\0'; i++)
 	{
-			
+
 	
 	}
 	return (i);
