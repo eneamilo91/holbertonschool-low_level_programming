@@ -10,15 +10,11 @@
 	{
 
 	}
-	j= (i - 1) / 2
+	j= (i - 1) / 2;
 
 	for (j >= (i - 1) / 2; str[j] != '\0'; j++)
 	{
-		_putchar(str[j]);
-	
-	}
-	if(j % 2 != 0)
-	{
-		_putchar(str[j]);
-	}
+		if(j % 2 != 0)
+        		_putchar(str[j]);
+     	}
 }
