@@ -12,7 +12,7 @@
 	}
 	j= (i - 1) / 2;
 
-	for (j == (i - 1) / 2; str[j] != '\0'; j++)
+	for (j = (i - 1) / 2; str[j] != '\0'; j++)
 	{
 		if(j % 2 != 0)
         		_putchar(str[j]);
