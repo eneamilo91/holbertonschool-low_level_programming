@@ -1,27 +1,20 @@
 #include"main.h"
 
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, const char *src, size_t n)
 {
-    int i;
-    int j;
-    char *ptr;
-    ptr = dest;
+    size_t i;
 
-    for (i = 0; dest[i] != '\0'; i++)
-    {
+    for (i = 0; i < n && src[i] != '\0'; i++) {
+        dest[i] = src[i];
     }
 
-    j = 0;
 
-    while (src[j] != '\0' && j < n)
-    {
-        dest[i] = src[j];
-        j++;
+    while (i < n) {
+        dest[i] = '\0';
+        i++;
     }
 
-    src[j] = '\0'; 
-
-    return ptr;
+    return dest;
 }
 
