@@ -1,24 +1,18 @@
 #include "main.h"
-
 /**
- * _strcmp - compares two strings
- * @s1: first string to compare
- * @s2: second string to compare
- * Return: diff of two characters
+ * print_rev - print reverse text
+ * @s: reverse text
  */
-int _strcmp(char *s1, char *s2)
+void print_rev(char *s)
 {
-	int i = 0;
-	int diff = 0;
+	int len = 0;
+	int i, last_index;
 
-	while (s1[i] != '\0' || s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-		{
-			diff = s1[i] - s2[i];
-			break;
-		}
-		i++;
-	}
-	return (diff);
+	while (s[len] != '\0')
+		len++;
+	last_index = len - 1;
+
+	for (i = last_index; i >= 0; i--)
+		_putchar(s[i]);
+	_putchar('\n');
 }
