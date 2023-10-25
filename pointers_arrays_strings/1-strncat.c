@@ -1,27 +1,34 @@
 #include"main.h"
 
+/**
+ * _strncat -entry point,conc two strings
+ * @src: -holds value for input
+ * @n: -holds value for input
+ * Return: (ptr)
+ */
+
 
 char *_strncat(char *dest, char *src, int n)
 {
-    int i;
-    int j;
-    char *ptr;
-    ptr = dest;
+	int i;
+	int j;
+	char *ptr;
 
-    for (i = 0; dest[i] != '\0'; i++)
-    {
-    }
+	ptr = dest;
 
-    j = 0;
+	for (i = 0; dest[i] != '\0'; i++)
+	{
+	}
 
-    while (src[j] != '\0' && j < n)
-    {
-        dest[i + j] = src[j];
-        j++;
-    }
+	j = 0;
 
-    dest[i + j] = '\0'; 
+	while (src[j] != '\0' && j < n)
+	{
+	dest[i + j] = src[j];
+	j++;
+	}
 
-    return ptr;
+	dest[i + j] = '\0'; 
+
+	return (ptr);
 }
-
