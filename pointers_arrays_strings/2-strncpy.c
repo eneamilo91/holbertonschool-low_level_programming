@@ -1,27 +1,33 @@
 #include"main.h"
+/**
+ * _strncpy -entry point,capies a string
+ * @dest: -holds value for output
+ * @src:  -holds value for output
+ * @n:- holds value for output
+ */
 
 
 char *_strncpy(char *dest, char *src, int n)
 {
-    int i;
-    int j;
-    char *ptr;
-    ptr = dest;
+	int i;
+	int j;
+	char *ptr;
 
-    for (i = 0; dest[i] != '\0'; i++)
-    {
-    }
+	ptr = dest;
 
-    j = 0;
+	for (i = 0; dest[i] != '\0'; i++)
+	{
+	}
 
-    while (src[j] != '\0' && j < n)
-    {
-        dest[i] = src[j];
-        j++;
-    }
+	j = 0;
 
-    src[j] = '\0'; 
+	while (src[j] != '\0' && j < n)
+	{
+	dest[i] = src[j];
+	j++;
+	}
 
-    return ptr;
+	src[j] = '\0'; 
+
+	return (ptr);
 }
-
