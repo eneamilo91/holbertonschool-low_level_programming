@@ -5,7 +5,7 @@
  * @dest: -holds value for output
  * @src: -holds value for output
  * Return: (ptr)
- */ 
+ */
 
 
 
@@ -14,9 +14,10 @@ char *_strcat(char *dest, char *src)
 	int i;
 	int j;
 	char *ptr;
+	
 	ptr = dest;
 
-    
+
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
@@ -32,5 +33,5 @@ char *_strcat(char *dest, char *src)
 
 	dest[i + j] = '\0';
 
-	return ptr; 
+	return (ptr); 
 }
