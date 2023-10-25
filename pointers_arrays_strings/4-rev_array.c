@@ -3,7 +3,7 @@
  * print_rev - print reverse text
  * @s: reverse text
  */
-void print_rev(char *s)
+void reverse_array(int *a, int n)
 {
 	int len = 0;
 	int i, last_index;
