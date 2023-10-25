@@ -1,24 +1,18 @@
 #include"main.h"
+
 /**
- * print_rev -entry point,prints a s in rev
- * @s: -holds value for input
+ * reverse_array - Make a reverse array
+ * @a: first array
+ * @n: second array
  */
-
-
-	void print_rev(char *s)
+void reverse_array(int *a, int n)
 {
-	int len = 0;
-	int i, last_index;
+	int i, tmp;
 
-	while (s[len] != '\0')
+	for (i = 0; i < n / 2; i++)
 	{
-		len++;
+		tmp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = tmp;
 	}
-	last_index = len - 1;
-
-	for (i = last_index; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
-	_putchar('\n');
 }
