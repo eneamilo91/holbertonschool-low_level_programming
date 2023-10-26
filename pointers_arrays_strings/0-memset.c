@@ -6,7 +6,7 @@
  * @b: -holds value for output
  * @n: -holds value for output
  * Return: (s)
- */ 
+ */
 
 
 char *_memset(char *s, char b, unsigned int n)
