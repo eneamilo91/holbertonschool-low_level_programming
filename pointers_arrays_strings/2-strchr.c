@@ -4,7 +4,7 @@
 /**
  * _strchr -entry point searches for character in str
  * @s: -string array to hold values
- * @c; -holds value for output
+ * @c: -holds value for output
  * Return: NULL
  */
 
