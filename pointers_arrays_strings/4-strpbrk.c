@@ -1,6 +1,13 @@
 #include"main.h"
 #include <stddef.h>
 
+/**
+ * _strpbrk -entry point,searching a string for char
+ * @s: -holds value for output
+ * @accept: -holds value for output
+ * Return: (NULL)
+ */
+
 char *_strpbrk(char *s, char *accept)
 {
 	int i;
@@ -14,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
 			{
 				return (s + i);
 			}
-		
+
 		}
 
 	}
