@@ -2,7 +2,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-    int i;
+	int i;
     int j;
     int count = 0;
 
@@ -23,4 +23,3 @@ unsigned int _strspn(char *s, char *accept)
     }
     return (count);
 }
-
