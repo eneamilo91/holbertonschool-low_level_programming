@@ -1,5 +1,10 @@
 #include"main.h"
 
+/**
+ * print_chessboard -entry point,print chessboard
+ * @a: -holds value for output
+ */
+
 void print_chessboard(char (*a)[8])
 {
 	int i;
