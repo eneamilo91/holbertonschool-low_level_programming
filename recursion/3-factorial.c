@@ -3,7 +3,7 @@
 /**
  * factorial -entry point,return factorial of number
  * @n: -holds value for output
- * Return: (i * factorial(i - 1))
+ * Return: (i * factorial(n - 1))
  */
 
 int factorial(int n)
@@ -17,5 +17,5 @@ int factorial(int n)
 		return (1);
 	}
 	else
-		return (i * factorial(i - 1));
+		return (n * factorial(n - 1));
 }
