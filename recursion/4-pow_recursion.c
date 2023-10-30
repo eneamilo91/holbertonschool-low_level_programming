@@ -5,7 +5,7 @@
  * @x: -holds value for output
  * @y: -holds value for output
  * Return: (x * _pow_recursion(x, y - 1))
- */ 
+ */
 
 
 int _pow_recursion(int x, int y)
