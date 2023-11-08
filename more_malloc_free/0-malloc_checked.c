@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 /**
- * malloc_chacked -entry point,allocates memory using malloc
+ * malloc_checked -entry point,allocates memory using malloc
  * @b: -holds value for output
  * Return: (ptr)
  */
