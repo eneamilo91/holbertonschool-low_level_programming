@@ -1,40 +1,34 @@
-#include<stdio.h>
-#include"dog.h"
-#include<stdlib.h>
-#include<string.h>
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "dog.h"
 
 /**
- * new_dog -entry point,function that creates a new dog
- * @name: -points to the respective value
- * @age: -holds value for output
- * @owner: -holds value for output
- * Return: (my_dog)
+ * new_dog - creates a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ * Return: pointer to the new dog_t
  */
-
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *my_dog = malloc(sizeof(dog_t));
+	dog_t *sec_dog = malloc(sizeof(dog_t));
+	char *sec_name = malloc(strlen(name) + 1);
+	char *sec_owner = malloc(strlen(owner) + 1);
 
-	if (my_dog == NULL)
-		return (NULL);
-
-	my_dog->name = strdup(name);
-	if (my_dog->name == NULL)
+	if (sec_dog == NULL || sec_name == NULL || sec_owner == NULL)
 	{
-		free(my_dog->name);
-		return (NULL);
-	}
-	my_dog->age = age;
-	my_dog->owner = strdup(owner);
-	if (my_dog->owner == NULL)
-	{
-		free(my_dog->name);
-		free(my_dog);
+		free(sec_dog);
+		free(sec_name);
+		free(sec_owner);
 		return (NULL);
 	}
 
-	return (my_dog);
-
+	strcpy(sec_name, name);
+	strcpy(sec_owner, owner);
+	sec_dog->name = sec_name;
+	sec_dog->age = age;
+	sec_dog->owner = sec_owner;
+	return (sec_dog);
 }
