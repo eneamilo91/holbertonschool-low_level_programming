@@ -21,6 +21,6 @@ typedef struct dlistint_s
 
 int _putchar(char c);
 size_t print_dlistint(const dlistint_t *h);
-
+size_t dlistint_len(const dlistint_t *h);
 
 #endif
