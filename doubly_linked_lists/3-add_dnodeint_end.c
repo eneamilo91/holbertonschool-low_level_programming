@@ -23,13 +23,15 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		new->prev = NULL;
 		new->next = NULL;
 	}
-	virtual = *head;
-	while (virtual->next != NULL)
+	else
 	{
-		virtual = virtual->next;
+		while (virtual->next != NULL)
+		{
+			virtual = virtual->next;
+		}
+		virtual->next = new;
+		new->next = NULL;
+		new->prev = virtual;
 	}
-	virtual->next = new;
-	new->next = NULL;
-	new->prev = virtual;
 	return (new);
 }
