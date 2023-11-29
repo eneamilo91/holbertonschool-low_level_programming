@@ -44,13 +44,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			}
 			else
 			{
-				if (i == idx)
+				if (i == idx - 1)
 				{
-					virtual->prev = new->prev;
-					if (virtual->prev != NULL)
-						virtual->prev->next = new;
-					virtual->prev = new;
-					new->next = virtual;
+					new->next = virtual->next;
+					new->prev = virtual;
+					if (virtual->next != NULL)
+						virtual->next->prev = new;
+					virtual->next = new;
 					return (new);
 				}
 			}
