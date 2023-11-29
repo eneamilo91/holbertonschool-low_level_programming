@@ -6,7 +6,7 @@
  * @h: -points to the head node
  * @idx: -holds value for output
  * @n: -holds value for output
- * Return (new)
+ * Return: (new)
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
