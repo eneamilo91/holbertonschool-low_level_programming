@@ -1,62 +1,44 @@
-#include"lists.h"
-#include<stdlib.h>
-
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 /**
- * insert_dnodeint_at_index -inserts node at specific index
- * @h: -points to the head node
- * @idx: -holds value for output
- * @n: -holds value for output
- * Return: (new)
+ * insert_dnodeint_at_index - function that inserts a new node at idx position
+ * @h: first node
+ * @idx: index where the node should be added
+ * @n: value to add to the new node
+ * Return: adress of the new node or NULL
  */
-
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i = 0;
-	dlistint_t *new = malloc(sizeof(dlistint_t));
-	dlistint_t *virtual = *h;
+	dlistint_t *new_n, *tmp;
+	unsigned int count;
 
-	if (new == NULL)
+	new_n = malloc(sizeof(dlistint_t));
+	tmp = *h;
+
+	if (new_n == NULL)
 		return (NULL);
-	new->n = n;
-	if (*h == NULL)
+	new_n->n = n;
+
+	if (idx == 0 || (*h) == NULL)
+		return (add_dnodeint(h, n));
 	{
-		if (idx == 0)
+		for (count = 0; count < idx - 1; count++)
 		{
-			*h = new;
-			new->next = NULL;
-			new->prev = NULL;
-			return (new);
+			if (tmp->next == NULL && count < idx)
+				return (NULL);
+
+			tmp = tmp->next;
 		}
-		else
-			return (NULL);
+		if (tmp->next == NULL)
+			return (add_dnodeint_end(h, n));
+
+		new_n->next = tmp->next;
+		new_n->prev = tmp;
+		tmp->next->prev = new_n;
+		tmp->next = new_n;
+		return (new_n);
 	}
-	else
-	{
-		while (virtual != NULL)
-		{
-			if (idx == 0)
-			{
-				new->next = virtual;
-				virtual->prev = new;
-				new->prev = NULL;
-				*h = new;
-				return (new);
-			}
-			else
-			{
-				if (i == idx - 1)
-				{
-					new->next = virtual->next;
-					new->prev = virtual;
-					if (virtual->next != NULL)
-						virtual->next->prev = new;
-					virtual->next = new;
-					return (new);
-				}
-			}
-			i++;
-			virtual = virtual->next;
-		}
-		return (NULL);
-	}
+	return (NULL);
 }
