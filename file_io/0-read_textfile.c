@@ -13,22 +13,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	ssize_t readed;
 	ssize_t written;
-	char *buffer;
+	char *buffer = malloc(letters * sizeof(char));
 
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(letters * sizeof(char));
-	if (buffer == NULL)
-		return (0);
 	readed = read(fd, buffer, letters);
-	written = write(1, buffer, readed);
-	if (readed == -1 && written != readed)
+	written = write(STDOUT_FILENO, buffer, readed);
+	if (readed == -1 || written != readed)
 		return (0);
 
 	close(fd);
-	free(buffer);
 	return (written);
 }
