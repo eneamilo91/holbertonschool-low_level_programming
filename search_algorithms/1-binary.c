@@ -5,6 +5,8 @@ void print_array(int *array, size_t size)
 {
 	int i;
 
+	printf("Searching in array: ");
+
 	for (i = 0; i < (int)size; i++)
 	{
 		printf("%d", array[i]);
@@ -21,8 +23,8 @@ int binary_algorithm(int *array, int min_index, int max_index, int value)
 
 	if (min_index <= max_index)
 	{
-		mid = (min_index + max_index)/2;
-		print_array(array, max_index - min_index + 1);
+		print_array(array + min_index, max_index - min_index + 1);
+		mid = (min_index + max_index) / 2;
 		if (value == array[mid])
 			return (mid);
 		if (value < array[mid])
