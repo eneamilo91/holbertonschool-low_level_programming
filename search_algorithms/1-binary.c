@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include"search_algos.h"
 
+/**
+ * print_array -prints an array of integers
+ * @array: -points to the array
+ * @size: -the size of the array
+ */
+
 void print_array(int *array, size_t size)
 {
 	int i;
@@ -15,6 +21,15 @@ void print_array(int *array, size_t size)
 	}
 	printf("\n");
 }
+
+/**
+ * binary_algorithm -searches for the value
+ * @array: -points to the array
+ * @min_index: -the minimum index
+ * @max_index: -the maximum index
+ * @value: -the value to be checked
+ * Return: (binary_algorithm(array, mid + 1, max_index, value)
+ */
 
 
 int binary_algorithm(int *array, int min_index, int max_index, int value)
@@ -34,6 +49,14 @@ int binary_algorithm(int *array, int min_index, int max_index, int value)
 	}
 	return (-1);
 }
+
+/**
+ * binary_search -searches for a value in an array
+ * @array: -points to the array of integers
+ * @size: -the size of the array
+ * @value: -the value to be checked
+ * Return: (binary_algorithm(array, 0, size - 1, value)
+ */
 
 int binary_search(int *array, size_t size, int value)
 {
